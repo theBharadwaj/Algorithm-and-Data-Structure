@@ -104,7 +104,31 @@ public class LinkedList {
 				insertAtEnd(data);	
 			}
 		}
-	 
+		public void deleteFirstNode()
+		{
+			if(start==null)
+				return;
+			start=start.link;  
+		}
+		
+		public void deleteLastNode()
+		{
+			if(start==null)
+				return;
+			
+			if(start.link==null)
+			{
+				start=null;
+				return;
+			}
+				
+			Node p=start;
+			while(p.link.link!=null)
+				p=p.link;
+			p.link=null;
+		}
+		
+		
 	 
 
 

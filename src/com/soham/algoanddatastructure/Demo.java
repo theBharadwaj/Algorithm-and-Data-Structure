@@ -8,5 +8,12 @@ public class Demo {
 		
 		list.createList();
 		list.displayList();
+		list.deleteFirstNode();
+		list.displayList();
+		list.deleteLastNode();
+		list.displayList();
+		
+		
+		
 	}
 }
