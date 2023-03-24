@@ -81,5 +81,23 @@ public class reverse {
 		}
 		start=prev;
 	}
+	public void BubbleSortExData()
+	{
+		Node end,p,q;
+		
+		for(end=null; end!=start.link; end=p)
+		{
+	  		for(p=start; p.link!=end; p=p.link)
+			{
+				q=p.link;
+				if(p.info > q.info)
+				{
+					int temp=p.info;
+					p.info=q.info;
+					q.info=temp;
+				}
+			}
+		}
+	}
 
 }

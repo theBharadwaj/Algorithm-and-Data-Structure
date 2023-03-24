@@ -8,6 +8,8 @@ public class demo1 {
 		rev.displayList();
 		rev.reverseList();
 		rev.displayList();
+		rev.BubbleSortExData();
+		rev.displayList();
 		
 		
 		
